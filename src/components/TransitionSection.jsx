@@ -118,6 +118,33 @@ export default function TransitionSection() {
       </div>
       </Slide>
 
+      {/* HỆ THỐNG TÍN DỤNG — kết thúc phần Trần Hoàng Duy */}
+      <Slide>
+      <div className="container">
+        <div className="section-header reveal">
+          <span className="tag">Giáo trình · Trang 79–80 · Mục 4.1.1.1</span>
+          <h2 className="font-cinzel">Hệ Thống Tín Dụng</h2>
+          <p>Nhân tố trực tiếp thúc đẩy tập trung sản xuất và tạo tiền đề cho sự ra đời của các tổ chức độc quyền</p>
+        </div>
+
+        <div className="credit-content-box glass-panel reveal d-100">
+          <p className="credit-body">
+            Sự phát triển của hệ thống tín dụng, đặc biệt thông qua các công ty cổ phần, đã thúc đẩy tập trung
+            sản xuất và tạo tiền đề trực tiếp cho sự ra đời của các tổ chức độc quyền.
+          </p>
+          <span className="credit-ref-label">Giáo trình Kinh tế chính trị Mác - Lênin — Trang 80</span>
+        </div>
+
+        <div className="credit-quote-box glass-panel reveal d-300">
+          <blockquote className="credit-blockquote italic-serif">
+            "...tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển đến
+            mức độ nhất định, lại dẫn tới độc quyền"
+          </blockquote>
+          <p className="credit-quote-attr">— V.I. Lênin</p>
+        </div>
+      </div>
+      </Slide>
+
       {/* Dialectical Relationship */}
       <Slide>
       <div className="container">
@@ -137,6 +164,41 @@ export default function TransitionSection() {
       <style>{`
         .transition-section-root {
           background-color: var(--bg-primary);
+        }
+
+        .credit-content-box {
+          padding: 36px 40px;
+          margin-bottom: 24px;
+          border-left: 2px solid var(--color-gold);
+        }
+        .credit-body {
+          font-size: 16px;
+          line-height: 1.8;
+          color: var(--text-secondary);
+          margin-bottom: 14px;
+        }
+        .credit-ref-label {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: var(--text-muted);
+        }
+        .credit-quote-box {
+          padding: 32px 40px;
+          border-left: 2px solid rgba(207, 168, 60, 0.4);
+        }
+        .credit-blockquote {
+          font-size: 18px;
+          line-height: 1.7;
+          color: var(--color-gold-light);
+          margin-bottom: 16px;
+        }
+        .credit-quote-attr {
+          text-align: right;
+          font-size: 13px;
+          font-weight: 600;
+          color: var(--color-gold);
+          letter-spacing: 0.05em;
         }
         
         .prediction-box {

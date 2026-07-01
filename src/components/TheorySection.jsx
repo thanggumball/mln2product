@@ -310,6 +310,41 @@ export default function TheorySection() {
         .theory-container-root {
           background-color: var(--bg-primary);
         }
+
+        .credit-content-box {
+          padding: 36px 40px;
+          margin-bottom: 24px;
+          border-left: 2px solid var(--color-gold);
+        }
+        .credit-body {
+          font-size: 16px;
+          line-height: 1.8;
+          color: var(--text-secondary);
+          margin-bottom: 14px;
+        }
+        .credit-ref-label {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: var(--text-muted);
+        }
+        .credit-quote-box {
+          padding: 32px 40px;
+          border-left: 2px solid rgba(207, 168, 60, 0.4);
+        }
+        .credit-blockquote {
+          font-size: 18px;
+          line-height: 1.7;
+          color: var(--color-gold-light);
+          margin-bottom: 16px;
+        }
+        .credit-quote-attr {
+          text-align: right;
+          font-size: 13px;
+          font-weight: 600;
+          color: var(--color-gold);
+          letter-spacing: 0.05em;
+        }
         
         .s3d-room {
           position: relative;
