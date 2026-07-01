@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Shield } from 'lucide-react';
-import fptLogo from '../assets/fpt-logo.webp';
+import fptLogo from '../assets/fpt-logo.png';
 
 export default function Navbar({ activePage, setActivePage }) {
   const [scrolled, setScrolled] = useState(false);
@@ -75,7 +75,7 @@ export default function Navbar({ activePage, setActivePage }) {
         }
 
         .fpt-logo {
-          height: 32px;
+          height: 70px;
           width: auto;
           display: block;
           flex-shrink: 0;

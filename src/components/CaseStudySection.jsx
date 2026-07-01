@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { Globe, Database, Cpu, Target, CircleDollarSign, RefreshCw, MessageSquare, Award, Users, Share2, Layers } from 'lucide-react';
+import { Globe, Database, Cpu, Target, CircleDollarSign, RefreshCw, MessageSquare, Award, Users, Share2, Layers, ExternalLink } from 'lucide-react';
 import Slide from './Slide';
 
 export default function CaseStudySection() {
@@ -95,6 +95,18 @@ export default function CaseStudySection() {
                 </div>
               ))}
             </div>
+            <div className="source-bar">
+              <span className="source-label">Nguồn</span>
+              <a
+                href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="source-link"
+              >
+                <ExternalLink size={11} />
+                Meta Q4 & Full-Year 2025 Results — investor.atmeta.com
+              </a>
+            </div>
           </div>
         )}
 
@@ -119,6 +131,28 @@ export default function CaseStudySection() {
                   <span className="stat-detail">{stat.detail}</span>
                 </div>
               ))}
+            </div>
+            <div className="source-bar">
+              <span className="source-label">Nguồn</span>
+              <a
+                href="https://datareportal.com/reports/digital-2026-vietnam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="source-link"
+              >
+                <ExternalLink size={11} />
+                Digital 2026: Vietnam — datareportal.com
+              </a>
+              <span className="source-sep">·</span>
+              <a
+                href="https://theinvestor.vn/vietnams-tech-unicorn-vng-extends-losses-to-5th-year-d18756.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="source-link"
+              >
+                <ExternalLink size={11} />
+                VNG extends losses to 5th year — theinvestor.vn
+              </a>
             </div>
           </div>
         )}
@@ -321,7 +355,46 @@ export default function CaseStudySection() {
         }
         
         .stats-grid {
-          margin-bottom: 40px;
+          margin-bottom: 16px;
+        }
+
+        .source-bar {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 0 30px;
+          border-top: 1px solid rgba(255, 255, 255, 0.04);
+          flex-wrap: wrap;
+        }
+
+        .source-label {
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--text-muted);
+          flex-shrink: 0;
+        }
+
+        .source-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 11.5px;
+          color: var(--text-muted);
+          text-decoration: none;
+          transition: color 0.2s ease;
+          letter-spacing: 0.01em;
+        }
+
+        .source-link:hover {
+          color: var(--color-gold-light);
+        }
+
+        .source-sep {
+          color: var(--text-muted);
+          font-size: 11px;
+          opacity: 0.4;
         }
         
         .stat-card {
