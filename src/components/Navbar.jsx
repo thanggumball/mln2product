@@ -75,7 +75,7 @@ export default function Navbar({ activePage, setActivePage }) {
         }
 
         .fpt-logo {
-          height: 70px;
+          height: 85px;
           width: auto;
           display: block;
           flex-shrink: 0;

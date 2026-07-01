@@ -7,7 +7,6 @@ import TransitionSection from './components/TransitionSection';
 import ModernMonopolySection from './components/ModernMonopolySection';
 import CaseStudySection from './components/CaseStudySection';
 import ComparisonSection from './components/ComparisonSection';
-import QuizSection from './components/QuizSection';
 import AiUsagePage from './components/AiUsagePage';
 import Footer from './components/Footer';
 import './App.css';
@@ -20,7 +19,7 @@ function App() {
   useEffect(() => {
     if (activePage !== 'content') return;
 
-    const sections = ['hero', 'theory', 'transition', 'modern', 'cases', 'quiz'];
+    const sections = ['hero', 'theory', 'transition', 'modern', 'cases'];
     
     const observerOptions = {
       root: null,
@@ -97,7 +96,6 @@ function App() {
             <ModernMonopolySection />
             <CaseStudySection />
             <ComparisonSection />
-            <QuizSection />
           </div>
         )}
         

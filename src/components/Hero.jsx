@@ -174,7 +174,7 @@ export default function Hero() {
       >
         <motion.div className="team-header" variants={teamCardVariants}>
           <Users className="team-icon" size={14} />
-          <h3>Thành viên thực hiện — Nhóm Tày Quá</h3>
+          <h3>Thành viên thực hiện — Nhóm 3</h3>
         </motion.div>
 
         <div className="team-grid">

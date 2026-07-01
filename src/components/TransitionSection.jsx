@@ -145,20 +145,6 @@ export default function TransitionSection() {
       </div>
       </Slide>
 
-      {/* Dialectical Relationship */}
-      <Slide>
-      <div className="container">
-        <div className="relationship-box glass-panel reveal">
-          <h4 className="gold-text">Mối quan hệ biện chứng giữa Cạnh tranh và Độc quyền</h4>
-          <p>
-            Mặc dù độc quyền ra đời từ cạnh tranh tự do nhưng nó <strong>không triệt tiêu cạnh tranh</strong>.
-            Ngược lại, độc quyền làm cho cạnh tranh trở nên đa dạng, gay gắt và quyết liệt hơn.
-            Nó đẻ ra các hình thức cạnh tranh mới giữa các tổ chức độc quyền với nhau, giữa tổ chức độc quyền với
-            doanh nghiệp ngoài độc quyền, và cạnh tranh ngay trong nội bộ các tổ chức độc quyền.
-          </p>
-        </div>
-      </div>
-      </Slide>
 
 
       <style>{`
