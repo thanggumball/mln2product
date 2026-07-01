@@ -84,7 +84,7 @@ export default function Navbar({ activePage, setActivePage }) {
         }
         
         .logo-text {
-          font-family: var(--font-cinzel);
+          font-family: 'Cinzel', serif;
           font-weight: 600;
           font-size: 14px;
           color: var(--color-gold);

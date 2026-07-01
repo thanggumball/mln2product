@@ -86,11 +86,11 @@ const teamCardVariants = {
 
 export default function Hero({ onStart }) {
   const members = [
-    { name: 'Nguyễn Tiến Duy', role: 'Mở đầu & Lý thuyết độc quyền theo giáo trình' },
+    { name: 'Trần Hoàng Duy', role: 'Mở đầu & Lý thuyết độc quyền theo giáo trình' },
     { name: 'Nguyễn Huy Hoàng', role: 'Biểu hiện mới của độc quyền số: dữ liệu, thuật toán, nền tảng, hệ sinh thái & lợi nhuận siêu ngạch' },
-    { name: 'Nguyễn Việt Thắng', role: 'Case Big Tech Mỹ: Google, Meta, Apple/Amazon/Microsoft' },
-    { name: 'Phạm Minh Hiếu', role: 'Case Việt Nam & so sánh: Zalo, Grab, Shopee/MoMo' },
-    { name: 'Phú', role: 'Game tương tác, kết luận & câu hỏi phản biện' }
+    { name: 'Hồ Sỹ Thắng', role: 'Case Big Tech Mỹ: Google, Meta, Apple/Amazon/Microsoft' },
+    { name: 'Nguyễn Huy Hiếu', role: 'Case Việt Nam & so sánh: Zalo, Grab, Shopee/MoMo' },
+    { name: 'Nguyễn Hưng Phú', role: 'Game tương tác, kết luận & câu hỏi phản biện' }
   ];
 
   return (
