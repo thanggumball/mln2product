@@ -84,12 +84,15 @@ const teamCardVariants = {
   },
 };
 
-export default function Hero({ onStart }) {
+export default function Hero() {
+  const scrollToTeam = () => {
+    document.querySelector('.hero-team-slide')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
   const members = [
     { name: 'Trần Hoàng Duy', role: 'Mở đầu & Lý thuyết độc quyền theo giáo trình' },
     { name: 'Nguyễn Huy Hoàng', role: 'Biểu hiện mới của độc quyền số: dữ liệu, thuật toán, nền tảng, hệ sinh thái & lợi nhuận siêu ngạch' },
-    { name: 'Hồ Sỹ Thắng', role: 'Case Big Tech Mỹ: Google, Meta, Apple/Amazon/Microsoft' },
-    { name: 'Nguyễn Huy Hiếu', role: 'Case Việt Nam & so sánh: Zalo, Grab, Shopee/MoMo' },
+    { name: 'Hồ Sỹ Thắng', role: 'Case Big Tech Mỹ: Meta' },
+    { name: 'Nguyễn Huy Hiếu', role: 'Case Việt Nam & so sánh: Zalo' },
     { name: 'Nguyễn Hưng Phú', role: 'Game tương tác, kết luận & câu hỏi phản biện' }
   ];
 
@@ -127,7 +130,7 @@ export default function Hero({ onStart }) {
           </motion.div>
 
           <motion.div className="hero-actions" variants={childVariants}>
-            <button className="primary-btn" onClick={onStart}>
+            <button className="primary-btn" onClick={scrollToTeam}>
               <span>Khám phá đề tài</span>
               <ArrowRight size={16} />
             </button>
@@ -152,7 +155,7 @@ export default function Hero({ onStart }) {
 
       <motion.div
         className="scroll-indicator"
-        onClick={onStart}
+        onClick={scrollToTeam}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 0.8 }}

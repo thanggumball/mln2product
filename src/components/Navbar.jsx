@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Shield } from 'lucide-react';
+import fptLogo from '../assets/fpt-logo.png';
 
 export default function Navbar({ activePage, setActivePage }) {
   const [scrolled, setScrolled] = useState(false);
@@ -20,11 +21,13 @@ export default function Navbar({ activePage, setActivePage }) {
     <nav className={`navbar-container ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-content container">
         <div className="navbar-logo" onClick={() => setActivePage('content')}>
+          <img src={fptLogo} alt="FPT University" className="fpt-logo" />
+          <div className="logo-divider" />
           <Shield className="logo-icon" size={16} />
           <span className="logo-text">MLN122</span>
           <span className="logo-subtext">Độc quyền & Cạnh tranh</span>
         </div>
-        
+
         <ul className="navbar-links">
           <li>
             <button
@@ -32,14 +35,6 @@ export default function Navbar({ activePage, setActivePage }) {
               onClick={() => setActivePage('content')}
             >
               Nội Dung
-            </button>
-          </li>
-          <li>
-            <button
-              className={`navbar-ai-btn ${activePage === 'ai-usage' ? 'active' : ''}`}
-              onClick={() => setActivePage('ai-usage')}
-            >
-              AI Usage
             </button>
           </li>
         </ul>
@@ -77,6 +72,21 @@ export default function Navbar({ activePage, setActivePage }) {
           align-items: center;
           gap: 8px;
           cursor: pointer;
+        }
+
+        .fpt-logo {
+          height: 66px;
+          width: auto;
+          display: block;
+          flex-shrink: 0;
+        }
+
+        .logo-divider {
+          width: 1px;
+          height: 24px;
+          background: rgba(255, 255, 255, 0.12);
+          flex-shrink: 0;
+          margin: 0 2px;
         }
         
         .logo-icon {

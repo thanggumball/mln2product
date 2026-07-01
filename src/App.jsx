@@ -83,24 +83,6 @@ function App() {
     return () => clearTimeout(timer);
   }, [activePage]);
 
-
-  const handleStart = () => {
-    const nextSection = document.getElementById('theory');
-    if (nextSection) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = nextSection.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-      setActiveSection('theory');
-    }
-  };
-
   return (
     <>
       <Navbar activePage={activePage} setActivePage={setActivePage} />
@@ -109,7 +91,7 @@ function App() {
       <main style={{ flex: 1 }}>
         {activePage === 'content' && (
           <div className="fade-in">
-            <Hero onStart={handleStart} />
+            <Hero />
             <TheorySection />
             <TransitionSection />
             <ModernMonopolySection />

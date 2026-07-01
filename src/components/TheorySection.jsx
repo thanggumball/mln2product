@@ -91,7 +91,7 @@ export default function TheorySection() {
       vulnerability: 'Thường do một nhóm tư bản tài chính chi phối, kiểm soát chuỗi cung ứng khép kín từ nguyên liệu đến thành phẩm.',
     },
     modern: {
-      name: 'Concern & Conglomerate',
+      name: 'Consơn & Công-gơ-lô-mê-rết (Concern & Conglomerate)',
       vietnamese: 'Tập đoàn tài chính đa ngành hiện đại',
       level: 'Tối cao (Hệ sinh thái hiện đại)',
       desc: 'Các hình thức độc quyền đa ngành xuất hiện trong điều kiện hiện nay. Concern liên kết hàng trăm xí nghiệp đa ngành dựa trên chi phối tài chính. Conglomerate liên kết cực rộng các ngành không liên quan kỹ thuật sản xuất.',
@@ -249,7 +249,7 @@ export default function TheorySection() {
                   className={`timeline-btn ${selectedForm === key ? 'active' : ''}`}
                   onClick={() => setSelectedForm(key)}
                 >
-                  <span className="nav-step">{key === 'modern' ? 'Hiện đại' : key.toUpperCase()}</span>
+                  <span className="nav-step">{key === 'modern' ? 'Concern & Conglomerate' : key.toUpperCase()}</span>
                   <span className="nav-name">{monopolyForms[key].name.split(' (')[0]}</span>
                 </button>
               ))}
