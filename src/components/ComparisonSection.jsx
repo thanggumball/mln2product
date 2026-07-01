@@ -129,15 +129,11 @@ export default function ComparisonSection() {
             <Sparkles size={20} className="gold-text" />
           </div>
           <div className="note-content">
-            <h4 className="gold-text">Nhận định chung dưới góc độ Kinh tế chính trị</h4>
+            <h4 className="gold-text">Tóm lại</h4>
             <p>
-              Cả Meta và Zalo đều cho thấy xu hướng tất yếu: <strong>Cạnh tranh tự do dẫn đến tích tụ và tập trung sản xuất</strong>
-              (trong kỷ nguyên số là tập trung lưu lượng truy cập, dữ liệu và người dùng). Dù ở quy mô toàn cầu hay nội địa,
-              quyền lực nền tảng đang tạo ra các rào cản gia nhập cực lớn cho đối thủ mới.
-            </p>
-            <p>
-              Tuy nhiên, cả hai đều không đạt tới độc quyền tuyệt đối, mà vẫn phải liên tục đổi mới, cạnh tranh với các đối thủ mới nổi
-              (như TikTok trong trường hợp Meta, hay Telegram/Viber trong trường hợp Zalo).
+              Meta và Zalo khác nhau về quy mô, nhưng giống nhau về cơ chế tạo quyền lực. Cả hai đều tận dụng
+              <strong> hiệu ứng mạng lưới</strong> để giữ chân người dùng và mở rộng hệ sinh thái. Nếu Meta là ví dụ rõ ràng
+              cho quyền lực nền tảng toàn cầu, thì Zalo là một ví dụ tiêu biểu cho quyền lực nền tảng số trong bối cảnh Việt Nam.
             </p>
           </div>
         </div>
