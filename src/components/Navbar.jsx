@@ -37,6 +37,16 @@ export default function Navbar({ activePage, setActivePage }) {
               Nội Dung
             </button>
           </li>
+          <li>
+            <a
+              href="https://mln112-thuongnghiep.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="navbar-link-btn navbar-game-btn"
+            >
+              Game
+            </a>
+          </li>
         </ul>
       </div>
       <style>{`
@@ -121,14 +131,17 @@ export default function Navbar({ activePage, setActivePage }) {
         }
         
         .navbar-link-btn {
+          display: inline-block;
           background: transparent;
           border: none;
           color: var(--text-secondary);
           padding: 6px 12px;
           font-size: 12px;
           font-weight: 600;
+          font-family: inherit;
           text-transform: uppercase;
           letter-spacing: 0.05em;
+          text-decoration: none;
           cursor: pointer;
           transition: all 0.2s ease;
           position: relative;
@@ -139,6 +152,10 @@ export default function Navbar({ activePage, setActivePage }) {
         }
         
         .navbar-link-btn.active {
+          color: var(--color-gold);
+        }
+
+        .navbar-game-btn {
           color: var(--color-gold);
         }
         
