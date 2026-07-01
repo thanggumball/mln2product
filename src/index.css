@@ -1,32 +1,32 @@
 /* Global Styles & Variables - Ultra Premium Academic Style */
 :root {
   --bg-primary: #05060a;
-  --bg-secondary: #0a0b12;
-  --bg-glass: rgba(10, 11, 18, 0.85);
-  --bg-glass-hover: rgba(15, 17, 28, 0.95);
-  
-  --border-color: rgba(212, 175, 55, 0.08);
-  --border-color-hover: rgba(212, 175, 55, 0.25);
-  
+  --bg-secondary: #0c0d16;
+  --bg-glass: rgba(14, 16, 26, 0.88);
+  --bg-glass-hover: rgba(20, 23, 38, 0.96);
+
+  --border-color: rgba(212, 175, 55, 0.20);
+  --border-color-hover: rgba(212, 175, 55, 0.48);
+
   --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #475569;
-  
+  --text-secondary: #a8bccf;
+  --text-muted: #7a8fa0;
+
   --color-gold-light: #e8d082;
   --color-gold: #cfa83c;
   --color-gold-dark: #997822;
-  
+
   --color-meta: #d4af37;
   --color-zalo: #d4af37;
-  
+
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-cinzel: 'Cinzel', serif;
-  
+
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.8);
   --shadow-lg: 0 30px 70px rgba(0, 0, 0, 0.9);
-  --shadow-glow: 0 0 20px rgba(207, 168, 60, 0.05);
+  --shadow-glow: 0 0 24px rgba(207, 168, 60, 0.18);
   
   font-family: var(--font-sans);
   color-scheme: dark;
@@ -47,9 +47,9 @@
 
 body {
   background-color: var(--bg-primary);
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.008) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.008) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.016) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.016) 1px, transparent 1px);
   background-size: 60px 60px;
   background-position: center top;
   min-height: 100vh;
@@ -119,11 +119,11 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #0f111a;
+  background: #1a1d2e;
   border: 1px solid var(--border-color);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #181b28;
+  background: #242840;
 }
 
 /* Grid & Layout Utilities */
@@ -210,9 +210,9 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  background: rgba(207, 168, 60, 0.06);
+  background: rgba(207, 168, 60, 0.12);
   color: var(--color-gold-light);
-  border: 1px solid rgba(207, 168, 60, 0.15);
+  border: 1px solid rgba(207, 168, 60, 0.30);
   margin-bottom: 20px;
 }
 

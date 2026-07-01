@@ -410,8 +410,8 @@ export default function Hero({ onStart }) {
         }
         
         .member-role {
-          font-size: 11px;
-          color: var(--text-muted);
+          font-size: 11.5px;
+          color: var(--text-secondary);
           line-height: 1.5;
         }
         

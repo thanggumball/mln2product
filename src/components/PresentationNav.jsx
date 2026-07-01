@@ -2,11 +2,14 @@ import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
 
 const INTERACTIVE_TAGS = new Set(['INPUT', 'TEXTAREA', 'BUTTON', 'A', 'SELECT']);
+const SCROLL_LOCK_MS = 900;
 
 export default function PresentationNav() {
   const [slides, setSlides] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const observerRef = useRef(null);
+  const scrollLockRef = useRef(false);
+  const scrollLockTimerRef = useRef(null);
 
   // Discover every slide in document order. Re-scans on resize and whenever
   // slides are added/removed (e.g. the Meta/Zalo case toggle mounts a
@@ -45,6 +48,7 @@ export default function PresentationNav() {
 
     const observer = new IntersectionObserver(
       (entries) => {
+        if (scrollLockRef.current) return;
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const idx = slides.indexOf(entry.target);
@@ -65,9 +69,19 @@ export default function PresentationNav() {
     (index) => {
       const clamped = Math.max(0, Math.min(slides.length - 1, index));
       const target = slides[clamped];
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      if (!target) return;
+
+      // Optimistically update index and lock observer during scroll so
+      // intermediate slides don't hijack the counter.
+      setCurrentIndex(clamped);
+      scrollLockRef.current = true;
+      clearTimeout(scrollLockTimerRef.current);
+      scrollLockTimerRef.current = setTimeout(() => {
+        scrollLockRef.current = false;
+      }, SCROLL_LOCK_MS);
+
+      const block = (target.dataset.scrollBlock) || 'start';
+      target.scrollIntoView({ behavior: 'smooth', block });
     },
     [slides]
   );

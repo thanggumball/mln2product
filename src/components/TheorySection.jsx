@@ -104,7 +104,9 @@ export default function TheorySection() {
     <div id="theory" className="theory-container-root">
 
       {/* 3D SCROLL ROOM SECTION */}
-      <Slide noPad>
+      {/* data-scroll-block="center" → PresentationNav scrolls to the midpoint of
+          this 180vh slide so scrollProgress≈0.5 and the card is fully visible */}
+      <Slide noPad data-scroll-block="center">
       <div ref={roomRef} className="s3d-room">
         <div className="s3d-sticky">
           <div className="s3d-ambient"></div>
@@ -633,7 +635,7 @@ export default function TheorySection() {
           margin-bottom: 12px;
           text-transform: uppercase;
           letter-spacing: 0.15em;
-          color: var(--text-muted);
+          color: var(--text-secondary);
           font-weight: 700;
         }
         
@@ -712,7 +714,7 @@ export default function TheorySection() {
         .nav-step {
           display: block;
           font-size: 9px;
-          color: var(--text-muted);
+          color: var(--text-secondary);
           font-weight: 700;
           margin-bottom: 4px;
           letter-spacing: 0.15em;
@@ -776,7 +778,7 @@ export default function TheorySection() {
         
         .detail-section h5 {
           font-size: 11px;
-          color: var(--text-muted);
+          color: var(--text-secondary);
           margin-bottom: 8px;
           text-transform: uppercase;
           letter-spacing: 0.1em;
@@ -804,7 +806,7 @@ export default function TheorySection() {
           display: block;
           font-size: 10px;
           font-weight: 700;
-          color: var(--text-muted);
+          color: var(--text-secondary);
           text-transform: uppercase;
           margin-bottom: 6px;
           letter-spacing: 0.05em;
