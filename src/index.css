@@ -166,7 +166,9 @@ section {
   padding: 130px 0 90px;
   border-bottom: 1px solid var(--border-color);
   scroll-snap-align: start;
-  scroll-margin-top: 64px;
+  /* 12px = (navbar_64 − pad_top_130 + pad_bottom_90) / 2
+     Centers content in the usable viewport area below the fixed navbar. */
+  scroll-margin-top: 12px;
 }
 
 .slide-flush {

@@ -76,7 +76,7 @@ export default function CaseStudySection() {
         {/* CASE INTRO: META */}
         {activeCase === 'meta' && (
           <div className="case-content-wrapper fade-in">
-            <div className="case-intro reveal">
+            <div className="case-intro">
               <span className="case-badge-type">Big Tech Toàn Cầu</span>
               <h3 className="gold-text italic-serif">Meta Platforms — Hệ sinh thái thống trị sự chú ý</h3>
               <p>
@@ -86,7 +86,7 @@ export default function CaseStudySection() {
               </p>
             </div>
 
-            <div className="grid-3 stats-grid reveal">
+            <div className="grid-3 stats-grid">
               {metaStats.map((stat, idx) => (
                 <div key={idx} className="stat-card glass-panel">
                   <span className="stat-label">{stat.label}</span>
@@ -101,7 +101,7 @@ export default function CaseStudySection() {
         {/* CASE INTRO: ZALO */}
         {activeCase === 'zalo' && (
           <div className="case-content-wrapper fade-in">
-            <div className="case-intro reveal">
+            <div className="case-intro">
               <span className="case-badge-type">Nền Tảng Việt Nam</span>
               <h3 className="gold-text italic-serif">Zalo — Hạ tầng giao tiếp số quốc gia</h3>
               <p>
@@ -111,7 +111,7 @@ export default function CaseStudySection() {
               </p>
             </div>
 
-            <div className="grid-3 stats-grid reveal">
+            <div className="grid-3 stats-grid">
               {zaloStats.map((stat, idx) => (
                 <div key={idx} className="stat-card glass-panel">
                   <span className="stat-label">{stat.label}</span>
@@ -129,7 +129,7 @@ export default function CaseStudySection() {
       {activeCase === 'meta' && (
         <Slide>
         <div className="container">
-          <div className="loop-container glass-panel reveal fade-in">
+          <div className="loop-container glass-panel fade-in">
             <div className="loop-header">
               <RefreshCw className="loop-icon-title rotate-anim" size={20} />
               <h4>Vòng Lặp Quyền Lực Độc Quyền Của Meta</h4>
@@ -176,7 +176,7 @@ export default function CaseStudySection() {
       {activeCase === 'zalo' && (
         <Slide>
         <div className="container">
-          <div className="grid-2 zalo-visual-grid reveal fade-in">
+          <div className="grid-2 zalo-visual-grid fade-in">
             <div className="visual-card glass-panel">
               <h4>Độ Phủ Cực Lớn Tại Việt Nam (2026)</h4>
               <p className="visual-desc">So sánh tỷ lệ người dùng Zalo so với Dân số và người dùng Internet Việt Nam</p>
@@ -222,7 +222,7 @@ export default function CaseStudySection() {
       {activeCase === 'zalo' && (
         <Slide>
         <div className="container">
-          <div className="zalo-ecosystem-box glass-panel reveal fade-in">
+          <div className="zalo-ecosystem-box glass-panel fade-in">
             <div className="eco-header">
               <Layers className="eco-icon" size={20} />
               <h4>Hệ Sinh Thái Số Toàn Diện của Zalo</h4>
