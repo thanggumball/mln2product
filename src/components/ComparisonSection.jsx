@@ -17,48 +17,48 @@ export default function ComparisonSection() {
       id: 'products',
       label: 'Sản phẩm chính',
       meta: 'Facebook, Instagram, Messenger, WhatsApp',
-      zalo: 'Zalo Chat, Zalo OA, Zalo Mini App',
+      zalo: 'Zalo chat, Zalo OA, Zalo Mini App',
       color: 'rgba(212, 175, 55, 0.03)'
     },
     {
       id: 'users',
       label: 'Quy mô người dùng',
-      meta: '3.58 tỷ người dùng hoạt động hằng ngày trong hệ sinh thái',
-      zalo: '78.3 triệu người dùng hoạt động hằng tháng tại Việt Nam',
+      meta: '3.58 tỷ Family Daily Active People toàn cầu năm 2025',
+      zalo: '78.3 triệu monthly active users tại Việt Nam theo DataReportal 2026',
       color: 'rgba(212, 175, 55, 0.03)'
     },
     {
       id: 'coverage',
-      label: 'Mức độ phủ',
-      meta: 'Có phạm vi toàn cầu, ảnh hưởng đến nhiều thị trường',
-      zalo: 'Phủ rất mạnh tại Việt Nam (77% dân số, 91% người dùng internet)',
+      label: 'Mức độ phủ tại Việt Nam',
+      meta: 'Facebook ad reach tương đương 77.6% dân số; Messenger ad reach 57.8 triệu người',
+      zalo: 'Zalo MAU tương đương 77.0% dân số và 91.4% người dùng internet Việt Nam',
       color: 'rgba(212, 175, 55, 0.03)'
     },
     {
       id: 'revenue',
       label: 'Nguồn thu chính',
-      meta: 'Quảng cáo số dựa trên dữ liệu người dùng (chiếm hơn 97%)',
-      zalo: 'Dịch vụ doanh nghiệp (Zalo OA, Ads), tiện ích số và hệ sinh thái Zalo',
+      meta: 'Quảng cáo số dựa trên dữ liệu người dùng',
+      zalo: 'Dịch vụ giá trị gia tăng, dịch vụ doanh nghiệp, hệ sinh thái Zalo',
       color: 'rgba(212, 175, 55, 0.03)'
     },
     {
       id: 'mechanism',
-      label: 'Cơ chế quyền lực',
-      meta: 'Dữ liệu lớn, thuật toán AI, hệ sinh thái quảng cáo toàn cầu',
-      zalo: 'Thói quen sử dụng, mạng lưới quan hệ xã hội địa phương và tích hợp dịch vụ nội địa',
+      label: 'Cơ chế độc quyền',
+      meta: 'Dữ liệu lớn, thuật toán, quảng cáo, hệ sinh thái toàn cầu',
+      zalo: 'Thói quen sử dụng, mạng lưới quan hệ, tích hợp dịch vụ nội địa',
       color: 'rgba(212, 175, 55, 0.03)'
     },
     {
       id: 'barriers',
-      label: 'Rào cản đối thủ',
-      meta: 'Đối thủ mới khó có dữ liệu, quy mô người dùng và hệ thống quảng cáo tương đương',
-      zalo: 'Đối thủ mới khó thay thế thói quen dùng Zalo trong đời sống, học tập, hành chính Việt Nam',
+      label: 'Rào cản cho đối thủ',
+      meta: 'Đối thủ mới khó có dữ liệu và mạng lưới toàn cầu tương đương',
+      zalo: 'Đối thủ mới khó thay thế thói quen dùng Zalo trong đời sống Việt Nam',
       color: 'rgba(212, 175, 55, 0.03)'
     },
     {
       id: 'conclusion',
       label: 'Kết luận',
-      meta: 'Quyền lực nền tảng ở quy mô toàn cầu',
+      meta: 'Độc quyền nền tảng ở quy mô toàn cầu',
       zalo: 'Quyền lực nền tảng nội địa, chưa phải độc quyền tuyệt đối',
       color: 'rgba(212, 175, 55, 0.03)'
     }

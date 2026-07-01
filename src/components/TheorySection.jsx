@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HelpCircle, Landmark, ShieldAlert, Award, TrendingUp, Layers, CheckCircle2, Terminal } from 'lucide-react';
 import Slide from './Slide';
+import sxImg from '../assets/sx.jpg';
+import ctImg from '../assets/ct.jpg';
+import khktImg from '../assets/khkt.jpg';
 
 export default function TheorySection() {
   const [selectedForm, setSelectedForm] = useState('cartel');
@@ -35,7 +38,8 @@ export default function TheorySection() {
       icon: TrendingUp,
       years: 'THẾ KỶ XIX - XX',
       color: '#cfa83c',
-      isOdd: true
+      isOdd: true,
+      image: sxImg
     },
     {
       title: 'Cạnh tranh quyết liệt',
@@ -44,7 +48,8 @@ export default function TheorySection() {
       icon: ShieldAlert,
       years: 'QUY LUẬT CẠNH TRANH',
       color: '#cfa83c',
-      isOdd: false
+      isOdd: false,
+      image: ctImg
     },
     {
       title: 'Khủng hoảng & Tín dụng',
@@ -53,7 +58,8 @@ export default function TheorySection() {
       icon: Landmark,
       years: 'HỆ THỐNG TÍN DỤNG',
       color: '#cfa83c',
-      isOdd: true
+      isOdd: true,
+      image: khktImg
     }
   ];
 
@@ -167,7 +173,14 @@ export default function TheorySection() {
             <Slide key={idx}>
               <div className={`pr ${src.isOdd ? 'pr--odd' : 'pr--even'}`}>
                 {/* Visual Stack Column */}
-                <div className={`pr-vis ${visRevealClass}`}>
+                <div
+                  className={`pr-vis ${visRevealClass}`}
+                  style={src.image ? {
+                    backgroundImage: `linear-gradient(rgba(5, 6, 10, 0.55), rgba(5, 6, 10, 0.55)), url(${src.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  } : undefined}
+                >
                   <div className="pr-art-stack">
                     <div className="pr-art-slot">
                       <div className="pr-art-portrait">
