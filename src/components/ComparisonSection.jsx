@@ -146,7 +146,7 @@ export default function ComparisonSection() {
 
       <style>{`
         .comparison-section-root {
-          background-color: var(--bg-primary);
+          background-color: var(--bg-secondary);
         }
         
         .table-wrapper {

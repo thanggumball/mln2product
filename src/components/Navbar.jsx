@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Shield } from 'lucide-react';
 import fptLogo from '../assets/fpt-logo.png';
 
 export default function Navbar({ activePage, setActivePage }) {
@@ -23,7 +22,6 @@ export default function Navbar({ activePage, setActivePage }) {
         <div className="navbar-logo" onClick={() => setActivePage('content')}>
           <img src={fptLogo} alt="FPT University" className="fpt-logo" />
           <div className="logo-divider" />
-          <Shield className="logo-icon" size={16} />
           <span className="logo-text">MLN122</span>
           <span className="logo-subtext">Độc quyền & Cạnh tranh</span>
         </div>
@@ -98,11 +96,7 @@ export default function Navbar({ activePage, setActivePage }) {
           flex-shrink: 0;
           margin: 0 2px;
         }
-        
-        .logo-icon {
-          color: var(--color-gold);
-        }
-        
+
         .logo-text {
           font-family: 'Cinzel', serif;
           font-weight: 600;

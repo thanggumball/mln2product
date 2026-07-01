@@ -244,7 +244,7 @@ export default function ModernMonopolySection() {
 
       <style>{`
         .modern-monopoly-root {
-          background-color: var(--bg-primary);
+          background-color: var(--bg-secondary);
         }
 
         /* Intro box */

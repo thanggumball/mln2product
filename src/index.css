@@ -159,16 +159,26 @@ section {
 /* Presentation slides — one full screen "frame" per idea instead of
    one continuous scroll, so the site can be stepped through like a deck. */
 .slide {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 130px 0 90px;
-  border-bottom: 1px solid var(--border-color);
   scroll-snap-align: start;
   /* 12px = (navbar_64 − pad_top_130 + pad_bottom_90) / 2
      Centers content in the usable viewport area below the fixed navbar. */
   scroll-margin-top: 12px;
+}
+
+.slide::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--border-color-hover) 50%, transparent 100%);
 }
 
 .slide-flush {

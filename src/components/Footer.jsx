@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="brand-logo">
             <Shield className="logo-icon" size={20} />
-            <span>Nhóm Tày Quá</span>
+            <span>Nhóm 3</span>
           </div>
           <p className="brand-desc">
             Sản phẩm học tập trực quan tương tác phục vụ thuyết trình chuyên đề môn học Kinh tế chính trị Mác - Lênin.
@@ -23,8 +23,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-meta">
-          <span>Khóa học: MLN122 - Học viện Công nghệ Bưu chính Viễn thông</span>
-          <span>© 2026 Nhóm Tày Quá. Thiết kế với <Heart size={12} className="heart-icon" /> và React.</span>
+          <span>Khóa học: MLN122 - Đại học FPT</span>
+          <span>© 2026 Nhóm 3. Thiết kế với <Heart size={12} className="heart-icon" /> và React.</span>
         </div>
 
         <button className="top-btn" onClick={scrollToTop} aria-label="Cuộn lên đầu trang">

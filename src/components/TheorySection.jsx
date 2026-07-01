@@ -308,7 +308,7 @@ export default function TheorySection() {
 
       <style>{`
         .theory-container-root {
-          background-color: var(--bg-primary);
+          background-color: var(--bg-secondary);
         }
 
         .credit-content-box {

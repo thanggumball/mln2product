@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { Globe, Database, Cpu, Target, CircleDollarSign, RefreshCw, MessageSquare, Award, Users, Share2, Layers, ExternalLink } from 'lucide-react';
 import Slide from './Slide';
+import metaLogo from '../assets/logos/meta.svg';
+import zaloLogo from '../assets/logos/zalo.svg';
 
 export default function CaseStudySection() {
   const [activeCase, setActiveCase] = useState('meta');
@@ -77,8 +79,15 @@ export default function CaseStudySection() {
         {activeCase === 'meta' && (
           <div className="case-content-wrapper fade-in">
             <div className="case-intro">
-              <span className="case-badge-type">Big Tech Toàn Cầu</span>
-              <h3 className="gold-text italic-serif">Meta Platforms — Hệ sinh thái thống trị sự chú ý</h3>
+              <div className="case-intro-head">
+                <div className="case-logo-badge">
+                  <img src={metaLogo} alt="Meta logo" />
+                </div>
+                <div>
+                  <span className="case-badge-type">Big Tech Toàn Cầu</span>
+                  <h3 className="gold-text italic-serif">Meta Platforms — Hệ sinh thái thống trị sự chú ý</h3>
+                </div>
+              </div>
               <p>
                 Meta (sở hữu Facebook, Instagram, Messenger và WhatsApp) đại diện cho quá trình tích tụ và tập trung tư bản
                 ở mức độ cực kỳ cao trong thời đại số. Sức mạnh của Meta không đến từ các nhà máy hay hầm mỏ truyền thống,
@@ -114,8 +123,15 @@ export default function CaseStudySection() {
         {activeCase === 'zalo' && (
           <div className="case-content-wrapper fade-in">
             <div className="case-intro">
-              <span className="case-badge-type">Nền Tảng Việt Nam</span>
-              <h3 className="gold-text italic-serif">Zalo — Hạ tầng giao tiếp số quốc gia</h3>
+              <div className="case-intro-head">
+                <div className="case-logo-badge">
+                  <img src={zaloLogo} alt="Zalo logo" />
+                </div>
+                <div>
+                  <span className="case-badge-type">Nền Tảng Việt Nam</span>
+                  <h3 className="gold-text italic-serif">Zalo — Hạ tầng giao tiếp số quốc gia</h3>
+                </div>
+              </div>
               <p>
                 Zalo ban đầu chỉ là ứng dụng nhắn tin OTT thuần túy ra mắt năm 2012, nhưng đã vươn lên thành một
                 hệ sinh thái số quốc nội vô cùng mạnh mẽ. Sức mạnh của Zalo thể hiện rõ ràng cơ chế tạo lập quyền lực nền tảng
@@ -328,7 +344,37 @@ export default function CaseStudySection() {
         .case-intro {
           margin-bottom: 30px;
         }
-        
+
+        .case-intro-head {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-bottom: 12px;
+        }
+
+        .case-logo-badge {
+          flex-shrink: 0;
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          background: rgba(212, 175, 55, 0.06);
+          border: 1px solid var(--border-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 16px;
+        }
+
+        .case-logo-badge img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .case-intro-head h3 {
+          margin-bottom: 0;
+        }
+
         .case-badge-type {
           display: inline-block;
           font-size: 10px;

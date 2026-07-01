@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, ChevronDown, ArrowRight } from 'lucide-react';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/mln.jpg';
 import Slide from './Slide';
 
 // Stagger container variant
@@ -31,25 +31,6 @@ const childVariants = {
     transition: {
       duration: 0.9,
       ease: [0.23, 1, 0.32, 1],
-    },
-  },
-};
-
-// Image variant — slightly different timing
-const imageVariants = {
-  hidden: {
-    opacity: 0,
-    scale: 0.92,
-    filter: 'blur(12px)',
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    filter: 'blur(0px)',
-    transition: {
-      duration: 1.2,
-      ease: [0.23, 1, 0.32, 1],
-      delay: 0.4,
     },
   },
 };
@@ -99,6 +80,7 @@ export default function Hero() {
   return (
     <section id="hero" className="hero-section-root">
       <Slide className="hero-title-slide">
+      <div className="hero-bg-image" />
       <div className="container hero-grid">
         <motion.div
           className="hero-info"
@@ -139,17 +121,6 @@ export default function Hero() {
               <span className="course-name">Kinh tế chính trị Mác - Lênin</span>
             </div>
           </motion.div>
-        </motion.div>
-
-        <motion.div
-          className="hero-visual"
-          variants={imageVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <div className="image-wrapper">
-            <img src={heroImg} alt="Monopoly Network Graphic" className="hero-main-img" />
-          </div>
         </motion.div>
       </div>
 
@@ -201,9 +172,25 @@ export default function Hero() {
           padding-top: 100px;
         }
 
+        .hero-bg-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 50%;
+          background-image: linear-gradient(to left, transparent 0%, var(--bg-primary) 100%), url(${heroImg});
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: 0;
+          pointer-events: none;
+        }
+
         .hero-grid {
+          position: relative;
+          z-index: 1;
           display: grid;
-          grid-template-columns: 1.25fr 0.75fr;
+          grid-template-columns: 1fr;
           gap: 60px;
           align-items: center;
           margin-bottom: 60px;
@@ -211,6 +198,7 @@ export default function Hero() {
         
         .hero-info {
           text-align: left;
+          max-width: 55%;
         }
         
         .hero-title {
@@ -334,31 +322,6 @@ export default function Hero() {
           color: var(--text-secondary);
         }
         
-        .hero-visual {
-          display: flex;
-          justify-content: center;
-          position: relative;
-        }
-        
-        .image-wrapper {
-          position: relative;
-          z-index: 2;
-          border-radius: 2px;
-          overflow: hidden;
-          box-shadow: var(--shadow-lg);
-          border: 1px solid var(--border-color);
-          width: 100%;
-          max-width: 380px;
-          aspect-ratio: 1 / 1;
-        }
-        
-        .hero-main-img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-        }
-        
         /* Team Section */
         .team-container {
           width: 100%;
@@ -452,14 +415,14 @@ export default function Hero() {
             text-align: center;
             gap: 40px;
           }
-          .hero-info { text-align: center; }
+          .hero-info { text-align: center; max-width: 100%; }
           .hero-title { font-size: 34px; }
           .gold-text-title { font-size: 36px; }
           .sub-title-serif { font-size: 28px; }
           .hero-actions { justify-content: center; }
           .lenin-quote { border-left: none; border-top: 2px solid var(--color-gold); }
           .team-grid { grid-template-columns: repeat(2, 1fr); }
-          .image-wrapper { margin: 0 auto; }
+          .hero-bg-image { display: none; }
         }
 
         @media (max-width: 576px) {
