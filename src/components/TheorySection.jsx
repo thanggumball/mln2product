@@ -185,7 +185,6 @@ export default function TheorySection() {
                     <div className="pr-art-slot">
                       <div className="pr-art-portrait">
                         <Icon size={40} className="pr-art-icon" />
-                        <span className="pr-art-initial italic-serif">{src.title.charAt(0)}</span>
                         <span className="pr-art-label">{src.title}</span>
                         <span className="pr-art-years">{src.years}</span>
                       </div>
@@ -557,14 +556,7 @@ export default function TheorySection() {
         .pr-art-icon {
           color: var(--color-gold);
         }
-        
-        .pr-art-initial {
-          font-size: 60px;
-          font-weight: 500;
-          line-height: 1;
-          color: var(--text-primary);
-        }
-        
+
         .pr-art-label {
           font-size: 10px;
           letter-spacing: 0.25em;
